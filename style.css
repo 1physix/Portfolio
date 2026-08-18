@@ -26,7 +26,17 @@ section {
 }
 
 .tab{
-    padding: 5px;
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 5px;
+    outline-style: solid;
     outline-color: black;
     outline-width: 1px;
+
+    transition: padding 0.3s ease-in;
+
+}
+
+.tab:hover{
+    padding: 8px 12px;
 }
