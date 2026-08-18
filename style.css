@@ -1,7 +1,32 @@
+@font-face {
+    font-family: Cantarell;
+    src: url(Cantarell-Regular.ttf);
+}
+
+body{
+    background-color: #f8f2e5;
+    color: #4F494C;
+    margin: 0;
+    font-family: Cantarell;
+}
+
 section {
     display: none;
 }
 
 #home {
     display: block;
+}
+
+#container{
+    width:70%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 3vh;
+}
+
+.tab{
+    padding: 5px;
+    outline-color: black;
+    outline-width: 1px;
 }

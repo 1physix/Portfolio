@@ -8,30 +8,32 @@
 </head>
 
 <body>
-    <nav>
-        <a onclick = "showSection('home')">Home</a>
-        <a onclick = "showSection('projects')">Projects</a>
-        <a onclick = "showSection('socials')">Socials</a>
-        <a onclick = "showSection('blog')">Blog (coming soon)</a>
-    </nav>
+    <div id = "container">
+        <nav>
+            <a onclick = "showSection('home')" class = "tab">Home</a>
+            <a onclick = "showSection('projects')" class = "tab">Projects</a>
+            <a onclick = "showSection('blog')" class = "tab">Blog (coming soon)</a>
+        </nav>
 
-    <section id ="home">
-        <h1>Ishaq Hussain</h1>
-        <p>Hi! I'm Ishaq, a 1st Year Computer Science MSci student at King's College London. I'm interested in programming, maths, computer vision, robotics, and have recently started dabbling in finance. At A-Level, I studied Maths, Further Maths, Computer Science and Physics, where I achieved AAAB. Outside of academic stuff, I play a lot of squash and watch a lot of geopolitics.</p>
-    </section>
+        <section id ="home">
+            <h1>Ishaq Hussain</h1>
+            <p>Hi! I'm Ishaq, a 1st Year Computer Science MSci student at King's College London. I'm interested in programming, maths, computer vision, robotics, and have recently started dabbling in finance. At A-Level, I studied Maths, Further Maths, Computer Science and Physics. Outside of academic stuff, I play a lot of squash and watch a lot of videos on geopolitics.</p>
+            <div>
+                <p>LinkedIn</p>
+                <p>GitHub</p>
+                <p>Email</p>
+            </div>
+        </section>
 
-    <section id ="projects">
+        <section id ="projects">
+            
+        </section>
 
-    </section>
+        <section id ="blog">
+            <h1>Coming soon...</h1>
+        </section>
 
-    <section id ="socials">
-
-    </section>
-
-    <section id ="blog">
-
-    </section>
-
-    <script src = "script.js"></script>
+        <script src = "script.js"></script>
+    </div>
 </body>
 </html>
