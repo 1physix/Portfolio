@@ -40,3 +40,15 @@ section {
 .tab:hover{
     padding: 8px 12px;
 }
+
+.inline-socials{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+}
+
+.inline-socials img{
+    height: 19px;
+    width: auto;
+}
