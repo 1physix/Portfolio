@@ -50,24 +50,24 @@ section {
 .inline-socials p{
     font-size: 18px;
 
-    transition: font-size 0.3s ease-in;
+    
 }
 
 .inline-socials img{
     height: 20px;
     width: auto;
 
-    /* transition: height 0.3s ease-in; */
-    transition: rotate 0.3s ease-out;
+    transition: height 0.3s ease-in;
+    /* transition: rotate 0.3s ease-out; */
 }
 
-.inline-socials img:hover{
-    /* height: 30px; */
-    rotate: -30deg;
+.inline-socials:hover img{
+    height: 30px;
+    /* rotate: -30deg; */
     
 }
 
-.inline-socials p:hover{
-    font-size: 22px;
+.inline-socials:hover p{
+    font-size: 30px;
     
 }
