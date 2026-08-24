@@ -45,10 +45,29 @@ section {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.inline-socials p{
     font-size: 18px;
+
+    transition: font-size 0.3s ease-in;
 }
 
 .inline-socials img{
-    height: 19px;
+    height: 20px;
     width: auto;
+
+    /* transition: height 0.3s ease-in; */
+    transition: rotate 0.3s ease-out;
+}
+
+.inline-socials img:hover{
+    /* height: 30px; */
+    rotate: -30deg;
+    
+}
+
+.inline-socials p:hover{
+    font-size: 22px;
+    
 }
