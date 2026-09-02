@@ -50,7 +50,7 @@ section {
 .inline-socials p{
     font-size: 18px;
 
-    
+    transition: font-size 0.4s ease-in;
 }
 
 .inline-socials img{
