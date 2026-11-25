@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Add a project · Ishaq Hussain</title>
+  <link rel="stylesheet" href="../style.css">
+  <script defer src="../projects.js"></script>
+  <script type="module" src="editor.mjs"></script>
+</head>
+<body>
+  <main class="project-editor">
+    <a class="back-link" href="../#projects">← All projects</a>
+    <h1>Add a project</h1>
+    <p>Generate an updated project list, then publish it through GitHub.</p>
+    <form id="project-form">
+      <label>Project title <input name="title" maxlength="120" required></label>
+      <label>Public GitHub repository <input name="repository" type="url" placeholder="https://github.com/owner/repo" required></label>
+      <label>Main file path <input name="path" placeholder="src/main.py" required></label>
+      <label>Description <textarea name="description" rows="4" maxlength="5000" required></textarea></label>
+      <button type="submit">Preview and prepare project</button>
+    </form>
+    <p id="editor-status" role="status"></p>
+    <section id="editor-output" hidden>
+      <h2>Source preview</h2>
+      <pre class="project-code"><code id="source-preview"></code></pre>
+      <a id="download-projects" download="projects.js">Download projects.js</a>
+      <p>Replace the repository’s existing <code>projects.js</code> with the downloaded file. Start from the latest published project list before adding another project.</p>
+      <a href="https://github.com/1physix/Portfolio/upload/main">Open GitHub’s upload page</a>
+    </section>
+  </main>
+</body>
+</html>
