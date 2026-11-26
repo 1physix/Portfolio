@@ -29,3 +29,7 @@ Omit `notes`, `image` and `links` when you don’t have them. The site needs no 
 Serve the site over HTTP and open `/admin/`. Enter a title, description, public GitHub repository URL and the main file path relative to its root. The editor fetches a snapshot of the file on the default branch for preview and includes it in the generated project list. To update that displayed code later, update the saved snapshot.
 
 Download `projects.js` and replace the repository file through GitHub. Only an account with repository write access can publish. The editor page itself is public and has no write credentials. Start with the latest published project list before generating another file so an older export cannot overwrite newer work.
+
+## Cloudflare production deployment
+
+Use `main` as the production branch. Set `ADMIN_PASSCODE` as an encrypted production secret of at least 16 characters and set Functions failure mode to fail closed. A signed-out request to `/admin/` should return HTTP 401. The public homepage should return HTTP 200.
