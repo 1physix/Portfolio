@@ -1,6 +1,9 @@
 const encoder = new TextEncoder();
 
 export async function onRequest({ request, env, next }) {
+  const path = new URL(request.url).pathname;
+  if (path !== "/admin" && !path.startsWith("/admin/")) return next();
+
   const headers = { "Cache-Control": "private, no-store" };
 
   if (!env.ADMIN_PASSCODE || env.ADMIN_PASSCODE.length < 16) {
