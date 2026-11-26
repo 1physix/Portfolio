@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <title>Add a project · Ishaq Hussain</title>
+  <title>Project editor · Ishaq Hussain</title>
   <link rel="stylesheet" href="../style.css">
   <script defer src="../projects.js"></script>
   <script type="module" src="editor.mjs"></script>
@@ -12,13 +12,15 @@
 <body>
   <main class="project-editor">
     <a class="back-link" href="../#projects">← All projects</a>
-    <h1>Add a project</h1>
+    <h1>Project editor</h1>
     <p>Generate an updated project list, then publish it through GitHub.</p>
     <form id="project-form">
+      <label>Project to edit <select name="project"><option value="">Add a new project</option></select></label>
       <label>Project title <input name="title" maxlength="120" required></label>
-      <label>Public GitHub repository <input name="repository" type="url" placeholder="https://github.com/owner/repo" required></label>
-      <label>Main file path <input name="path" placeholder="src/main.py" required></label>
+      <label>Public GitHub repository <input name="repository" type="url" placeholder="https://github.com/owner/repo"></label>
+      <label>Main file path <input name="path" placeholder="src/main.py"></label>
       <label>Description <textarea name="description" rows="4" maxlength="5000" required></textarea></label>
+      <p>A repository and main file path are optional. Leave the path blank if you only want to link to a repository.</p>
       <button type="submit">Preview and prepare project</button>
     </form>
     <p id="editor-status" role="status"></p>

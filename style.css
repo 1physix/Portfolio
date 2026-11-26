@@ -143,7 +143,7 @@ p { margin: 0 0 1rem; }
 
 .project-editor form { display: grid; gap: .9rem; margin-bottom: 1rem; }
 .project-editor label { display: grid; gap: .25rem; }
-.project-editor input, .project-editor textarea, .project-editor button {
+.project-editor input, .project-editor textarea, .project-editor select, .project-editor button {
   padding: .45rem .65rem;
   border: 1px solid var(--ink);
   border-radius: .25rem;
