@@ -16,7 +16,8 @@ export async function onRequest({ request, env, next }) {
     return new Response("Admin sign-in required.", { status: 401, headers });
   }
 
-  const response = new Response(await next());
+  const upstream = await next();
+  const response = new Response(upstream.body, upstream);
   response.headers.set("Cache-Control", headers["Cache-Control"]);
   return response;
 }
